@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Nodos del DOM</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicios Nodos del DOOM</h1>
+    <ol>
+        <hr>
+        <li>
+            <b>Manipulación de Texto:</b> Selecciona un elemento de texto en tu página y cambia su contenido utilizando JavaScript. Por ejemplo, cambia el texto de un párrafo o un encabezado.
+        </li>
+        <h3 id="encabezado">Encabezado original</h3>
+        <p id="parrafo">Parrafo original</p>
+        <hr>
+        <li id="e2">
+            <b>Agregar y Eliminar Elementos:</b> Crea un nuevo elemento (por ejemplo, un párrafo o una lista) dinámicamente con JavaScript y agrégalo al DOM. Luego, elimina un elemento existente.
+        </li>
+        <p id="eliminar">Parrafo existente original</p>
+        <hr>
+        <li>
+            <b>Manipulación de Atributos:</b> Selecciona un elemento que tenga un atributo (como un enlace con un atributo href) y cambia el valor del atributo utilizando JavaScript.
+        </li>
+        <a href="#" class="btn btn-primary" id="atributo">Enlace</a>
+        <hr>
+        <li>
+            <b>Crear y Manipular Listas:</b> Crea una lista (ul o ol) vacía en el DOM con JavaScript. Luego, agrega elementos a la lista dinámicamente.
+        </li>
+        <button id="addElement" class="btn btn-primary mb-2">Agregar Elemento</button>
+        <h4>Lista de Elementos</h4>
+        <ul id="lista">
+
+        </ul>
+        <hr>
+        <li>
+            <b>Comentarios Dinámicos:</b> Utiliza JavaScript para agregar un comentario dinámico a tu código HTML. Por ejemplo, puedes agregar un comentario que indique la fecha y hora en que se realizó una acción específica.
+        </li>
+        <div class="row mb-2">
+            <div class="form-floating col-4">
+                <input type="text" name="usuario" id="usuario" class="form-control">
+                <label for="usuario" class="form-label">Usuario</label>
+            </div>
+            <div class="form-floating col">
+                <textarea name="comentario" id="comentario" class="form-control"></textarea>
+                <label for="comentario" class="form-label">Comentario</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success col mb-2" id="enviar">Enviar</button>
+        <div id="addComment"></div>
+        <hr>
+        <li id="color">
+            <b>Cambiar Estilos Dinámicamente:</b> Selecciona un elemento y cambia su estilo (por ejemplo, el color de fondo o el tamaño del texto) utilizando JavaScript en respuesta a algún evento, como un clic en un botón.
+        </li>
+        <button id="cambio" class="btn btn-info">Cambiar color fondo</button>
+        <button id="cambioTexto" class="btn btn-outline-info">Cambiar color de texto</button>
+        <hr>
+        <li>
+            <b>Manejar Eventos:</b> Asigna un manejador de eventos a un elemento (por ejemplo, un botón) y realiza alguna acción cuando ocurra el evento (por ejemplo, mostrar un mensaje en la consola cuando se haga clic en el botón).
+        </li>
+        <button class="btn btn-danger" id="alerta">Enviar alerta</button>
+        <hr>
+        <li>
+            <b>Aplicación de Lista de Tareas Interactiva:</b> Crea una aplicación simple de lista de tareas. Los usuarios pueden agregar tareas, marcarlas como completadas y eliminarlas. Utiliza nodos de texto y elementos de lista.
+        </li>
+        <div>
+            <h3 class="text-bg-primary text-center rounded-5 p-1">Lista de tareas</h3>
+            <ol id="listaTareas">
+
+            </ol>
+        </div>
+        <div class="row row-cols-auto">
+            <div class="col">
+                <button class="btn btn-success" id="agregar">Agregar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" id="completa">Completada/Sin completar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-danger" id="borrar">Eliminar</button>
+            </div>
+        </div>
+        <hr>
+        <li>
+            <b>Galería de Imágenes Dinámica:</b> Crea una galería de imágenes en tu página. Utiliza JavaScript para cambiar dinámicamente las imágenes y sus descripciones cuando se hace clic en miniaturas.
+        </li>
+        <div class="row row-cols-4">
+            <div class="col">
+                <img src="./img/paisaje1.png" alt="" class="img-thumbnail" id="img1">
+            </div>
+            <div class="col">
+                <img src="./img/paisaje2.png" alt="" class="img-thumbnail" id="img2">
+            </div>
+            <div class="col">
+                <img src="./img/paisaje3.png" alt="" class="img-thumbnail" id="img3">
+            </div>
+            <div class="col">
+                <img src="./img/paisaje4.png" alt="" class="img-thumbnail" id="img4">
+            </div>
+        </div>
+        <div class="row">
+            <img src="" alt="" srcset="" id="imgPrincipal" class="img-thumbnail">
+        </div>
+        <hr>
+        <li>
+            <b>Actualización de Contenido en Tiempo Real:</b> Utiliza JavaScript para actualizar dinámicamente el contenido de tu página en tiempo real. Esto podría ser información como la hora actual, la temperatura o cualquier dato que pueda cambiar.
+        </li>
+        <p id="hora"></p>
+    </ol>
+    </div>
+    
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
